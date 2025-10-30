@@ -1,4 +1,4 @@
-## Screening flow cheat sheet
+# Screening flow cheat sheet
 
 The screening UI routes each locale to its diagnostic edition (RU/JA → ICD-10, EN → ICD-11, UK → DSM-5-TR), scores labels with the
 weighted two-core-minimum formula, and surfaces guidance (triggers, fears, irritants) for any category that records a “yes”.
@@ -7,6 +7,28 @@ Read the extended walkthrough in [Home](https://github.com/Zhovten-Games/PsyFram
 ## What is ICD?
 
 The International Classification of Diseases (ICD) is the global diagnostic standard maintained by the World Health Organization to classify health conditions and related signs, symptoms, and external causes. It enables consistent clinical documentation, epidemiological tracking, and research across countries. Read more in the official English Wikipedia article: https://en.wikipedia.org/wiki/International_Classification_of_Diseases.
+
+## Project Disclaimer
+
+### English (EN)
+> [!WARNING]
+> This project is created to develop the core of a horror game and is intended for research and entertainment purposes only.  
+> It is not a medical, psychotherapeutic, or diagnostic tool.
+
+### Русский (RU)
+> [!WARNING]
+> Этот проект создан для разработки ядра хоррор-игры и носит исключительно исследовательско-развлекательный характер.  
+> Он не является медицинским, психотерапевтическим или диагностическим инструментом.
+
+### Українська (UK)
+> [!WARNING]
+> Цей проєкт створено для розробки ядра горор-гри і має виключно дослідницько-розважальний характер.  
+> Він не є медичним, психотерапевтичним чи діагностичним інструментом.
+
+### 日本語 (JA)
+> [!WARNING]
+> 本プロジェクトはホラーゲームのコア開発を目的としており、研究および娯楽のみを目的としています。  
+> 医療、心理療法、または診断のためのツールではありません。
 
 <details open>
 <summary>English Version</summary>
