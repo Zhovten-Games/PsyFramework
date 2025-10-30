@@ -129,7 +129,7 @@ export class ScreeningApp extends BaseComponent {
 
     const logo = document.createElement('img');
     logo.className = 'app-header__logo';
-    logo.src = '/assets/images/logo-opt.webp';
+    logo.src = './assets/images/logo-opt.webp';
     logo.alt = this.translator.t('app.logoAlt');
 
     const meta = document.createElement('div');
@@ -167,7 +167,7 @@ export class ScreeningApp extends BaseComponent {
 
     const logo = document.createElement('img');
     logo.className = 'app-footer__logo';
-    logo.src = '/assets/images/logo-opt.webp';
+    logo.src = './assets/images/logo-opt.webp';
     logo.alt = this.translator.t('app.logoAlt');
 
     const title = document.createElement('p');
