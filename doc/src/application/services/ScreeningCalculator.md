@@ -1,0 +1,3 @@
+# ScreeningCalculator.js
+
+`ScreeningCalculator` centralises the screening use case inside the application layer. It instantiates the weighted score engine, category insight builder, result insight builder, and guidance insight builder (through injectable factories for testing) and exposes a `calculate(methodology, responses, { locale })` method that returns diagnostic labels, per-category aggregates, derived label insights, and locale-aware guidance entries. Presentation components call this facade instead of wiring engines directly, keeping the hexagonal boundary clean while still depending only on the methodology contract.

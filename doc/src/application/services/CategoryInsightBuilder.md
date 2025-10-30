@@ -1,0 +1,3 @@
+# CategoryInsightBuilder.js
+
+`CategoryInsightBuilder` produces aggregated per-category statistics for the questionnaire. Given the current response map, it counts positive answers within each methodology category and emits totals used to render the category overview table. The builder keeps insight logic outside the presentation layer and relies solely on the methodology's questions catalogue. Each insight now exposes a `categoryId` instead of a raw configuration object so adapters can join it with presentation-oriented snapshots without leaking domain structures across the hexagonal boundary.
