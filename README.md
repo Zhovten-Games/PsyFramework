@@ -2,7 +2,7 @@
 
 The screening UI routes each locale to its diagnostic edition (RU/JA → ICD-10, EN → ICD-11, UK → DSM-5-TR), scores labels with the
 weighted two-core-minimum formula, and surfaces guidance (triggers, fears, irritants) for any category that records a “yes”.
-Read the extended walkthrough in [https://github.com/Zhovten-Games/PsyFramework/wiki](Home).
+Read the extended walkthrough in [Home](https://github.com/Zhovten-Games/PsyFramework/wiki).
 
 ## What is ICD?
 
