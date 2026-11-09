@@ -1,7 +1,7 @@
 export class BaseMethodology {
   constructor(config) {
     if (!config) {
-      throw new Error('Methodology config is required');
+      throw new Error("Methodology config is required");
     }
     this.config = config;
   }
@@ -39,6 +39,8 @@ export class BaseMethodology {
   }
 
   getQuestionsByCategory(categoryId) {
-    return this.questions.filter((question) => question.categoryId === categoryId);
+    return this.questions.filter(
+      (question) => question.categoryId === categoryId,
+    );
   }
 }

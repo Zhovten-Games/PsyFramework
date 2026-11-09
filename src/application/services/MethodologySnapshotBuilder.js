@@ -10,7 +10,7 @@ export class MethodologySnapshotBuilder {
         questions: [],
         categoryNameById: new Map(),
         guidanceByCategory: new Map(),
-        labelNameById: new Map()
+        labelNameById: new Map(),
       };
     }
 
@@ -18,7 +18,7 @@ export class MethodologySnapshotBuilder {
       const id = category.id;
       const name = this.methodology.translateCategoryName(category, locale);
       const guidance =
-        typeof this.methodology.translateCategoryGuidance === 'function'
+        typeof this.methodology.translateCategoryGuidance === "function"
           ? this.methodology.translateCategoryGuidance(category, locale)
           : null;
 
@@ -39,10 +39,10 @@ export class MethodologySnapshotBuilder {
       return {
         id: question.id,
         categoryId,
-        categoryName: categoryNameById.get(categoryId) ?? '',
+        categoryName: categoryNameById.get(categoryId) ?? "",
         text: this.methodology.translateQuestionText(question, locale),
-        type: question.type ?? 'support',
-        impact: Boolean(question.impact)
+        type: question.type ?? "support",
+        impact: Boolean(question.impact),
       };
     });
 
@@ -50,7 +50,7 @@ export class MethodologySnapshotBuilder {
     for (const label of this.methodology.diagnosticLabels) {
       labelNameById.set(
         label.id,
-        this.methodology.translateLabelName(label, locale)
+        this.methodology.translateLabelName(label, locale),
       );
     }
 
@@ -59,7 +59,7 @@ export class MethodologySnapshotBuilder {
       questions,
       categoryNameById,
       guidanceByCategory,
-      labelNameById
+      labelNameById,
     };
   }
 }

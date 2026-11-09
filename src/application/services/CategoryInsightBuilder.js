@@ -14,7 +14,7 @@ export class CategoryInsightBuilder {
       return {
         categoryId: category.id,
         total: questions.length,
-        positive
+        positive,
       };
     });
   }

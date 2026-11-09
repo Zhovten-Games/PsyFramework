@@ -1,6 +1,6 @@
 export const languageFontConfig = {
   defaultClass: null,
   languages: {
-    ja: 'font-language--ja'
-  }
+    ja: "font-language--ja",
+  },
 };
