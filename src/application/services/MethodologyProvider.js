@@ -1,9 +1,9 @@
-import { ConfigMethodology } from '../../core/methodology/ConfigMethodology.js';
+import { ConfigMethodology } from "../../core/methodology/ConfigMethodology.js";
 
 export class MethodologyProvider {
   constructor({ configResolver } = {}) {
-    if (typeof configResolver !== 'function') {
-      throw new Error('MethodologyProvider requires a configResolver function');
+    if (typeof configResolver !== "function") {
+      throw new Error("MethodologyProvider requires a configResolver function");
     }
     this.configResolver = configResolver;
     this.cache = new Map();

@@ -1,4 +1,4 @@
-import { BaseMethodology } from './BaseMethodology.js';
+import { BaseMethodology } from "./BaseMethodology.js";
 
 export class ConfigMethodology extends BaseMethodology {
   constructor(config) {
@@ -6,15 +6,15 @@ export class ConfigMethodology extends BaseMethodology {
   }
 
   translateCategoryName(category, locale) {
-    return category.names?.[locale] ?? category.names?.default ?? '';
+    return category.names?.[locale] ?? category.names?.default ?? "";
   }
 
   translateLabelName(label, locale) {
-    return label.names?.[locale] ?? label.names?.default ?? '';
+    return label.names?.[locale] ?? label.names?.default ?? "";
   }
 
   translateQuestionText(question, locale) {
-    return question.text?.[locale] ?? question.text?.default ?? '';
+    return question.text?.[locale] ?? question.text?.default ?? "";
   }
 
   getCategoryGuidance(categoryId) {
@@ -24,7 +24,7 @@ export class ConfigMethodology extends BaseMethodology {
 
   translateCategoryGuidance(categoryOrId, locale) {
     const category =
-      typeof categoryOrId === 'string'
+      typeof categoryOrId === "string"
         ? this.findCategoryById(categoryOrId)
         : categoryOrId;
     if (!category?.guidance) {
@@ -39,14 +39,14 @@ export class ConfigMethodology extends BaseMethodology {
       const selected = Array.isArray(localized)
         ? localized
         : Array.isArray(fallback)
-        ? fallback
-        : [];
+          ? fallback
+          : [];
       return [...selected];
     };
     return {
       triggers: translateEntries(category.guidance.triggers),
       fears: translateEntries(category.guidance.fears),
-      irritants: translateEntries(category.guidance.irritants)
+      irritants: translateEntries(category.guidance.irritants),
     };
   }
 }

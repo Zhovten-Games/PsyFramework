@@ -16,7 +16,8 @@ export class LanguageFontManager {
       this.activeClass = null;
     }
 
-    const nextClass = this.config.languages?.[language] ?? this.config.defaultClass ?? null;
+    const nextClass =
+      this.config.languages?.[language] ?? this.config.defaultClass ?? null;
     if (nextClass) {
       body.classList.add(nextClass);
       this.activeClass = nextClass;

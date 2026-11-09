@@ -1,4 +1,4 @@
-import { BaseScoreEngine } from './BaseScoreEngine.js';
+import { BaseScoreEngine } from "./BaseScoreEngine.js";
 
 const CORE_WEIGHT = 1;
 const SUPPORT_WEIGHT = 0.5;
@@ -86,7 +86,7 @@ export class WeightedScoreEngine extends BaseScoreEngine {
           score,
           coreYes,
           supportYes,
-          impactCount
+          impactCount,
         });
       }
     }

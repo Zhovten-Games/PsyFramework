@@ -1,5 +1,5 @@
 export class BaseScoreEngine {
   calculate() {
-    throw new Error('calculate must be implemented');
+    throw new Error("calculate must be implemented");
   }
 }

@@ -5,7 +5,7 @@ export class BaseComponent {
 
   clear() {
     if (this.root) {
-      this.root.innerHTML = '';
+      this.root.innerHTML = "";
     }
   }
 }

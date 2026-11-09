@@ -1,0 +1,10 @@
+{
+  "name": "psyframework",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tools/warden.mjs",
+    "check": "node tools/warden.mjs",
+    "warden": "node tools/warden.mjs"
+  }
+}

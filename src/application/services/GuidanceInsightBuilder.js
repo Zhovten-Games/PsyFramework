@@ -9,14 +9,16 @@ export class GuidanceInsightBuilder {
     }
 
     const translateGuidance =
-      typeof this.methodology.translateCategoryGuidance === 'function'
-        ? (category, lang) => this.methodology.translateCategoryGuidance(category, lang)
+      typeof this.methodology.translateCategoryGuidance === "function"
+        ? (category, lang) =>
+            this.methodology.translateCategoryGuidance(category, lang)
         : () => null;
 
     const translateCategoryName =
-      typeof this.methodology.translateCategoryName === 'function'
-        ? (category, lang) => this.methodology.translateCategoryName(category, lang)
-        : (category) => category?.name ?? '';
+      typeof this.methodology.translateCategoryName === "function"
+        ? (category, lang) =>
+            this.methodology.translateCategoryName(category, lang)
+        : (category) => category?.name ?? "";
 
     const results = [];
     for (const categoryResult of categoryResults) {
@@ -24,7 +26,9 @@ export class GuidanceInsightBuilder {
         continue;
       }
 
-      const category = this.methodology.findCategoryById(categoryResult.categoryId);
+      const category = this.methodology.findCategoryById(
+        categoryResult.categoryId,
+      );
       if (!category) {
         continue;
       }
@@ -35,9 +39,13 @@ export class GuidanceInsightBuilder {
       }
 
       const normalizedGuidance = {
-        triggers: Array.isArray(guidance.triggers) ? [...guidance.triggers] : [],
+        triggers: Array.isArray(guidance.triggers)
+          ? [...guidance.triggers]
+          : [],
         fears: Array.isArray(guidance.fears) ? [...guidance.fears] : [],
-        irritants: Array.isArray(guidance.irritants) ? [...guidance.irritants] : []
+        irritants: Array.isArray(guidance.irritants)
+          ? [...guidance.irritants]
+          : [],
       };
 
       const hasContent =
@@ -52,7 +60,7 @@ export class GuidanceInsightBuilder {
       results.push({
         categoryId: category.id,
         categoryName: translateCategoryName(category, locale),
-        guidance: normalizedGuidance
+        guidance: normalizedGuidance,
       });
     }
 

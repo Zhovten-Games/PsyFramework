@@ -9,7 +9,7 @@ export class ResultInsightBuilder {
         leadingLabelId: null,
         leadingScore: null,
         comorbidity: false,
-        comparisonLabelIds: []
+        comparisonLabelIds: [],
       };
     }
 
@@ -33,7 +33,7 @@ export class ResultInsightBuilder {
       leadingLabelId: leading?.id ?? null,
       leadingScore,
       comorbidity,
-      comparisonLabelIds: sortedLabels.slice(0, 2).map((label) => label.id)
+      comparisonLabelIds: sortedLabels.slice(0, 2).map((label) => label.id),
     };
   }
 }
