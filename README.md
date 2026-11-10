@@ -1,22 +1,63 @@
 <pre>
-╔════════════════════════════════════════════════════════════════════════════╗
-║ INTERDEAD :: REPOSITORIES                                                  ║
-╠════════════════════════════════════════════════════════════════════════════╣
-║ ○ <a href="https://github.com/Zhovten-Games/InterDeadReferenceLibrary">InterDeadReferenceLibrary</a>                                                ║
-║ ○ <a href="https://github.com/Zhovten-Games/InterDeadProto">InterDeadProto</a>                                                           ║
-║ ○ <a href="https://github.com/Zhovten-Games/InterDeadIT">InterDeadIT</a>                                                              ║
-║ ○ <a href="https://github.com/Zhovten-Games/InterDeadCore">InterDeadCore</a>                                                            ║
-║ ▶ <a href="https://github.com/Zhovten-Games/PsyFramework">PsyFramework</a>                                                             ║
-║ ○ <a href="https://github.com/Zhovten-Games/InterDead">InterDead</a> (private)                                                      ║
-║ ○ <a href="https://github.com/Zhovten-Games/SPIDER">SPIDER</a>                                                                   ║
-╚════════════════════════════════════════════════════════════════════════════╝
+╔═════════════════════════════════════════════════════════════════════════════╗
+║                          INTERDEAD :: REPOSITORIES                          ║
+╠═════════════════════════════════════════════════════════════════════════════╣
+║                                                                             ║
+║ ○ <a href="https://github.com/Zhovten-Games/InterDeadReferenceLibrary">InterDead Reference Library (public)</a>                                      ║
+║   Public reference library: research, engineering standards and notes.      ║
+║   Materials are prepared for reuse outside the private workspace.           ║
+║                                                                             ║
+║ ○ <a href="https://github.com/Zhovten-Games/InterDeadProto">InterDeadProto (NOIR)</a>                                                     ║
+║   Narrative interface prototype: Nectosphere-Oriented Interface Relay.      ║
+║   A browser application with its own verified distribution pipeline.        ║
+║                                                                             ║
+║ ○ <a href="https://github.com/Zhovten-Games/InterDeadIT">InterDeadIT (website / entry point)</a>                                       ║
+║   The public website: localized articles, artifacts and project entry.      ║
+║   Connects visitors with InterDead and the shared web-side services.        ║
+║                                                                             ║
+║ ○ <a href="https://github.com/Zhovten-Games/InterDeadCore">InterDeadCore (identity + EFBD)</a>                                           ║
+║   Shared identity, EFBD scoring and interface contracts for the web.        ║
+║   Published packages are consumed by the website and related tools.         ║
+║                                                                             ║
+║ > <a href="https://github.com/Zhovten-Games/PsyFramework">PsyFramework (research / tooling)</a>                                         ║
+║   Configurable research and scoring tools supporting the project.           ║
+║   Browser presentation and methodology data retain separate roles.          ║
+║                                                                             ║
+║ ○ <a href="https://github.com/Zhovten-Games/InterDead">InterDead (private game repository)</a>                                       ║
+║   Portable C++20 narrative core, playable projections and Workshop.         ║
+║   Private production sources retain their own publication boundary.         ║
+║                                                                             ║
+║ ○ <a href="https://github.com/Zhovten-Games/SPIDER">SPIDER (methodology / contracts)</a>                                          ║
+║   Literary pseudocode for attributed intent and consistent projections.     ║
+║   Public contracts connect the method with reviewed project examples.       ║
+║                                                                             ║
+╠═════════════════════════════════════════════════════════════════════════════╣
+║                                PSYFRAMEWORK                                 ║
+╠═════════════════════════════════════════════════════════════════════════════╣
+║ PsyFramework is a configurable browser research prototype supporting        ║
+║ InterDead. Methodology definitions, scoring services and presentation       ║
+║ components remain separate. Its outputs serve the project’s research and    ║
+║ entertainment context.                                                      ║
+║                                                                             ║
+╠═════════════════════════════════════════════════════════════════════════════╣
+║                ECHO OF AN UNFADING MEMORY  /  INTERDEAD WIKI                ║
+║                                                                             ║
+║ <a href="https://interdead.zhovten.games/about/">ABOUT (EN)</a>                          <a href="https://interdead.fandom.com/wiki/InterDead_Wiki">WIKI (EN)</a>                               ║
+║ <a href="https://interdead.zhovten.games/ru/about/">ABOUT (RU)</a>                          <a href="https://interdead.fandom.com/ru/wiki/Interdead_%D0%92%D0%B8%D0%BA%D0%B8">WIKI (RU)</a>                               ║
+║ <a href="https://interdead.zhovten.games/uk/about/">ABOUT (UK)</a>                          <a href="https://interdead.fandom.com/uk/wiki/Main_Page">WIKI (UK)</a>                               ║
+║ <a href="https://interdead.zhovten.games/ja/about/">ABOUT (JA)</a>                          <a href="https://interdead.fandom.com/ja/wiki/InterDead_Wiki">WIKI (JA)</a>                               ║
+║                                                                             ║
+╠═════════════════════════════════════════════════════════════════════════════╣
+║                                   CONTACT                                   ║
+║ <a href="https://www.linkedin.com/company/zhovten-games/">Zhovten Games — LinkedIn</a>                                                    ║
+╚═════════════════════════════════════════════════════════════════════════════╝
 </pre>
 
 # PsyFramework
 
 Configurable browser research and scoring prototype.
 
-[Governance](governance/README.md) · [Technical registry](governance/ecosystem.json)
+[Governance](governance/README.md)
 
 ## Screening flow cheat sheet
 
@@ -91,15 +132,8 @@ Our refined development **Ideals** keep the experience maintainable and clinical
 - **Transparent Diagnostics**: When adding thresholds or multipliers, document them in the wiki and surface the calculations in result cards.
 - **No Side Effects in Config**: Configuration modules export plain data objects; avoid performing I/O or DOM work during import.
 
-## Project Structure
-
-- `index.html` – Mounting point that loads `src/presentation/main.js`.
-- `styles.css` – BEM-styled theme shared across presentation components.
-- `src/` – Modular source arranged by hexagonal layer.
-- `doc/` – Product documentation (classification references, logs, briefs).
-- `wiki/` – Technical notes for every source file in this sub-application.
 </details>
 
-## Verification and domain migration
+## Verification
 
-Run `node tools/warden.mjs` for the complete declared repository check corpus. The operator runbook and variable registry accompany the 2026-11-07 local migration delivery. Public site: https://interdead.zhovten.games/; prototype: https://noir.zhovten.games/. Cloudflare and Discord settings are applied separately from repository edits.
+Run `node tools/warden.mjs` with Node 24.19 or later. The check validates the adopted profile and exercises the production scoring services against the declared methodology cases. The browser application uses native ES modules and requires no product build step.

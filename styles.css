@@ -18,7 +18,7 @@
   --neutral: rgba(229, 193, 148, 0.2);
   --shadow-soft: 0 18px 48px rgba(6, 3, 1, 0.5);
   --shadow-card: 0 16px 40px rgba(13, 7, 3, 0.45);
-  font-family: "Lora", "Times New Roman", Times, serif;
+  font-family: 'Lora', 'Times New Roman', Times, serif;
 }
 
 body {
@@ -28,27 +28,23 @@ body {
   min-height: 100vh;
   background-color: var(--background);
   color: var(--foreground);
-  font-family: "Lora", "Times New Roman", Times, serif;
+  font-family: 'Lora', 'Times New Roman', Times, serif;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
 body::before {
-  content: "";
+  content: '';
   position: fixed;
   inset: 0;
   height: 100vh;
-  background: radial-gradient(
-    circle at top,
-    rgba(105, 62, 30, 0.35),
-    transparent 55%
-  );
+  background: radial-gradient(circle at top, rgba(105, 62, 30, 0.35), transparent 55%);
   pointer-events: none;
   z-index: 0;
 }
 
 body.font-language--ja {
-  font-family: "Noto Serif JP", "Lora", "Times New Roman", Times, serif;
+  font-family: 'Noto Serif JP', 'Lora', 'Times New Roman', Times, serif;
 }
 
 #app {
@@ -92,8 +88,9 @@ body.font-language--ja {
 .app-header__logo {
   width: 72px;
   height: 72px;
-  border-radius: 16px;
-  object-fit: cover;
+  border-radius: 0;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .app-header__meta {
@@ -175,20 +172,12 @@ body.font-language--ja {
 
 .question-card--core {
   border-color: var(--border-strong);
-  background: linear-gradient(
-    135deg,
-    rgba(224, 122, 31, 0.16),
-    rgba(53, 29, 13, 0.9)
-  );
+  background: linear-gradient(135deg, rgba(224, 122, 31, 0.16), rgba(53, 29, 13, 0.9));
 }
 
 .question-card--support {
   border-color: rgba(233, 154, 60, 0.35);
-  background: linear-gradient(
-    135deg,
-    rgba(233, 154, 60, 0.12),
-    rgba(53, 29, 13, 0.78)
-  );
+  background: linear-gradient(135deg, rgba(233, 154, 60, 0.12), rgba(53, 29, 13, 0.78));
 }
 
 .question-card--impact {
@@ -263,22 +252,22 @@ body.font-language--ja {
     background 0.2s ease;
 }
 
-.question-actions button[data-state="yes"] {
+.question-actions button[data-state='yes'] {
   background: rgba(224, 122, 31, 0.18);
   border-color: var(--accent);
   color: var(--accent);
   box-shadow: inset 0 0 0 1px rgba(224, 122, 31, 0.4);
 }
 
-.question-actions button[data-state="no"] {
+.question-actions button[data-state='no'] {
   background: rgba(209, 96, 61, 0.18);
   border-color: var(--danger);
   color: #ffb39e;
   box-shadow: inset 0 0 0 1px rgba(209, 96, 61, 0.35);
 }
 
-.question-actions button[data-state="unknown"],
-.question-actions button[data-state="neutral"] {
+.question-actions button[data-state='unknown'],
+.question-actions button[data-state='neutral'] {
   background: var(--neutral);
   border-color: rgba(226, 161, 94, 0.3);
   color: var(--foreground-muted);
@@ -439,8 +428,9 @@ body.font-language--ja {
 .app-footer__logo {
   width: 56px;
   height: 56px;
-  border-radius: 12px;
-  object-fit: cover;
+  border-radius: 0;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .app-footer__title {
